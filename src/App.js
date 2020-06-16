@@ -4,7 +4,9 @@ const App = (props) => {
   const [counter, setCounter] = useState({ value: 0, dummy: true });
 
   const refCb = (node) => {
-    console.log(node);
+    if (node !== null) {
+      console.log(node);
+    }
   };
 
   return (
