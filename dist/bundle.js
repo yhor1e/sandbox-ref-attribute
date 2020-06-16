@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "0bc6016e47a9e74e408e";
+/******/ 	var hotCurrentHash = "eceb7d323cd68926ea7d";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -29409,6 +29409,7 @@ var App = function App(props) {
       setCounter = _useState2[1];
 
   var refCb = function refCb(node) {
+    // https://github.com/facebook/react/issues/9328#issuecomment-291621897
     if (node !== null) {
       console.log(node);
     }
